@@ -12,27 +12,27 @@
             ];
         const table = document.getElementById('plan');
 
-            const tbody = document.createElement('tbody');
+        const tbody = document.createElement('tbody');
 
-            data.forEach(item => {
-                const row = document.createElement('tr');
+        data.forEach(item => {
+            const row = document.createElement('tr');
 
-                const idCell = document.createElement('th');
-                idCell.scope = 'row';
-                idCell.textContent = item.id;
-                row.appendChild(idCell);
+            const idCell = document.createElement('th');
+            idCell.scope = 'row';
+            idCell.textContent = item.id;
+            row.appendChild(idCell);
 
-                const goalCell = document.createElement('td');
-                goalCell.textContent = item.goal;
-                row.appendChild(goalCell);
+            const goalCell = document.createElement('td');
+            goalCell.textContent = item.goal;
+            row.appendChild(goalCell);
 
-                const dateCell = document.createElement('td');
-                dateCell.textContent = item.date;
-                row.appendChild(dateCell);
+            const dateCell = document.createElement('td');
+            dateCell.textContent = item.date;
+            row.appendChild(dateCell);
 
-                tbody.appendChild(row);
-            });
+            tbody.appendChild(row);
+        });
 
-            table.appendChild(tbody);
+        table.appendChild(tbody);
       }, false);
 })();
