@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     // Send the response text
     res.end('Hello, this is your GET response from Node.js server!');
-  } else if (req.method === 'GET' &&  req.url == "/data/menus") {
+  } else if (req.url == "/data/menus") {
       res.writeHead(200, {'Content-Type': 'application/json'});
       res.end('{' +
                  '"menuItems": [' +
@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
                );
       return;
 
-  } else if (req.method === 'GET' &&  req.url == "/data/plans") {
+  } else if (req.url == "/data/plans") {
           res.writeHead(200, {'Content-Type': 'application/json'});
           res.end('[ ' +
                      '{ "id": 1, "goal": "Learn Web Development on Node.js", "date": "06/10/2024" },' +
