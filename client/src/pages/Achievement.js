@@ -1,6 +1,9 @@
+import NavigationMenu from '../components/NavigationMenu';
+
 function Achievement () {
     return (
     <div class="container">
+        <NavigationMenu/>
         <h2>My achievements</h2>
 
         <div class="row">
