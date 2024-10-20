@@ -1,9 +1,6 @@
-import NavigationMenu from '../components/NavigationMenu';
-
 function Home() {
     return (
         <div class="container">
-          <NavigationMenu/>
 
           <h2>What i like</h2>
 
